@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TAAR: propuesta tecnológica para contribuir a la seguridad de los visitantes en las pasarelas del Glaciar Perito Moreno.">
+    <title>TAAR | La seguridad empieza con la prevención</title>
+
+    <!-- Bootstrap 5: estructura adaptable y componentes del menú -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos propios de TAAR -->
+    <link rel="stylesheet" href="taarvisual.css">
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand marca" href="#inicio" aria-label="TAAR, ir al inicio">
+                    <span class="marca-logo">
+                        <img src="Logo de Taar.png" alt="Logo de TAAR">
+                    </span>
+                    <span>TAAR</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                    aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#desafio">Problemática</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#propuesta">Propuesta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PORTADA -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <p class="sobretitulo">TECNOLOGÍA · PREVENCIÓN · SEGURIDAD</p>
+                        <h1>La seguridad empieza con la <span>prevención.</span></h1>
+                        <p class="hero-texto">
+                            Una propuesta tecnológica pensada para contribuir al control
+                            seguro de los accesos en las pasarelas del Glaciar Perito Moreno.
+                        </p>
+                        <a href="#propuesta" class="btn boton-principal">Conocé TAAR <span aria-hidden="true">↗</span></a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="hero-foto-marco">
+                            <img src="entorno.jpeg" alt="Vista del frente de hielo del Glaciar Perito Moreno" class="hero-foto">
+                            <div class="foto-etiqueta">GLACIAR PERITO MORENO · PATAGONIA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-detalle" aria-hidden="true"></div>
+        </section>
+
+        <!-- INTRODUCCIÓN -->
+        <section class="introduccion">
+            <div class="container">
+                <p class="introduccion-frase">
+                    La tecnología puede ayudar a cuidar a las personas y, al mismo tiempo,
+                    respetar el entorno natural.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROBLEMÁTICA -->
+        <section id="desafio" class="seccion seccion-clara">
+            <div class="container">
+                <div class="encabezado-seccion">
+                    <p class="sobretitulo">01 / EL DESAFÍO</p>
+                    <h2>Un entorno que puede cambiar en segundos.</h2>
+                    <p>
+                        En el área del glaciar, las condiciones climáticas pueden variar.
+                        El viento intenso, la baja visibilidad y la presencia de hielo
+                        en las pasarelas pueden generar situaciones de riesgo.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <article class="tarjeta-info">
+                            <img src="portada.jpeg" alt="Formaciones de hielo del glaciar">
+                            <div class="tarjeta-contenido">
+                                <span class="numero">01</span>
+                                <h3>Condiciones cambiantes</h3>
+                                <p>
+                                    El clima y las características del hielo pueden
+                                    modificar las condiciones del recorrido.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="tarjeta-info">
+                            <img src="problemática.avif" alt="Pasarelas de observación frente al Glaciar Perito Moreno">
+                            <div class="tarjeta-contenido">
+                                <span class="numero">02</span>
+                                <h3>Cuidado de los visitantes</h3>
+                                <p>
+                                    Es importante contar con medidas que ayuden a
+                                    restringir el acceso cuando una zona no sea segura.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPUESTA -->
+        <section id="propuesta" class="seccion seccion-azul">
+            <div class="container">
+                <div class="encabezado-seccion encabezado-blanco">
+                    <p class="sobretitulo">02 / NUESTRA PROPUESTA</p>
+                    <h2>¿Qué es TAAR?</h2>
+                    <p>
+                        TAAR es un prototipo de sistema automatizado que utiliza sensores
+                        y una placa Arduino para registrar distintas variables y colaborar
+                        con el control de acceso a las pasarelas.
+                    </p>
+                </div>
+
+                <div class="row g-3 mt-3">
+                    <div class="col-md-4">
+                        <article class="tarjeta-sensor">
+                            <span class="sensor-numero">SENSOR 01</span>
+                            <h3>Temperatura</h3>
+                            <p>
+                                Registra la temperatura del entorno y aporta información
+                                sobre las condiciones ambientales.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="tarjeta-sensor">
+                            <span class="sensor-numero">SENSOR 02</span>
+                            <h3>Acelerómetro</h3>
+                            <p>
+                                Mide aceleraciones y cambios de orientación mediante
+                                un acelerómetro y un giroscopio.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="tarjeta-sensor">
+                            <span class="sensor-numero">SENSOR 03</span>
+                            <h3>PIR</h3>
+                            <p>
+                                Detecta movimiento de personas u objetos en el área
+                                donde está instalado.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="funcionamiento">
+                    <div>
+                        <p class="sobretitulo">EL SISTEMA</p>
+                        <h3>¿Cómo funciona?</h3>
+                    </div>
+                    <p>
+                        Los sensores envían información al Arduino. Según la lógica
+                        programada, el prototipo puede activar señales luminosas y
+                        un mecanismo de control para indicar si el paso está habilitado
+                        o restringido.
+                    </p>
+                </div>
+
+                <div class="foto-seguridad">
+                    <img src="seguridad.jpg" alt="Visitantes recorriendo las pasarelas del glaciar">
+                    <p>Una propuesta que pone la prevención en primer lugar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IDENTIDAD -->
+        <section class="seccion identidad">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <div class="logo-panel">
+                            <img src="Logo de Taar.png" alt="Identidad visual de TAAR">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="sobretitulo">03 / NUESTRA IDENTIDAD</p>
+                        <h2>Prevenir. Proteger. Preservar.</h2>
+                        <p>
+                            La identidad de TAAR combina tonos inspirados en el paisaje
+                            glaciar: azul marino, celeste hielo, blanco y marrón piedra.
+                            El símbolo representa las formaciones del glaciar junto con
+                            una curva que evoca el recorrido y la protección.
+                        </p>
+                        <p class="frase-identidad">Protegemos el recorrido. Respetamos el hielo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRECIO -->
+        <section class="seccion precio-seccion">
+            <div class="container">
+                <div class="precio-panel">
+                    <div>
+                        <p class="sobretitulo">04 / VALOR ESTIMATIVO</p>
+                        <h2>Una propuesta tecnológica.</h2>
+                    </div>
+                    <div class="precio-valor">
+                        <span>$250.000</span>
+                        <small>ARS · Valor estimativo</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="container text-center">
+                <p class="sobretitulo">05 / CONTACTO</p>
+                <h2>Conocé más sobre TAAR.</h2>
+                <p>Seguinos para conocer nuestro proyecto y su desarrollo.</p>
+                <a class="btn boton-contacto" href="https://www.instagram.com/taar.arg/"
+                    target="_blank" rel="noopener noreferrer">@taar.arg <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie">
+        <div class="container">
+            <div class="pie-superior">
+                <div>
+                    <h2>TAAR</h2>
+                    <p>La seguridad empieza con la prevención.</p>
+                </div>
+                <a href="#inicio" class="volver-arriba">Volver arriba ↑</a>
+            </div>
+            <div class="pie-inferior">
+                <p>Giuliana Alvarado Federico · Ofelia Ruiz Borjas</p>
+                <p>Tecnología · 3.er año · © 2026 TAAR</p>
+            </div>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

@@ -1,0 +1,511 @@
+/* =========================================
+   TAAR - ESTILOS DE LA LANDING PAGE
+   Paleta: azul marino, celeste glaciar,
+   blanco y marrón piedra.
+   ========================================= */
+
+:root {
+    --azul: #102B43;
+    --azul-medio: #244A63;
+    --celeste: #B9D7E5;
+    --celeste-claro: #EAF3F7;
+    --blanco: #FFFFFF;
+    --marron: #B7A38C;
+    --texto: #405665;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--azul);
+    background-color: var(--blanco);
+}
+
+/* MENÚ Y MARCA */
+.encabezado {
+    background-color: var(--azul);
+}
+
+.navbar {
+    padding: 13px 0;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.marca-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 42px;
+    overflow: hidden;
+    background-color: var(--blanco);
+    border-radius: 7px;
+}
+
+.marca-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav-link {
+    margin-left: 13px;
+    color: var(--blanco);
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--celeste);
+}
+
+/* PORTADA */
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 88px 0 100px;
+    color: var(--blanco);
+    background: linear-gradient(120deg, var(--azul), var(--azul-medio));
+}
+
+.sobretitulo {
+    margin-bottom: 15px;
+    color: var(--marron);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+}
+
+.hero h1 {
+    max-width: 620px;
+    margin-bottom: 23px;
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 700;
+    line-height: 1.08;
+}
+
+.hero h1 span {
+    color: var(--celeste);
+}
+
+.hero-texto {
+    max-width: 520px;
+    margin-bottom: 30px;
+    color: #E0EAF0;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.boton-principal {
+    padding: 13px 23px;
+    color: var(--azul);
+    background-color: var(--celeste);
+    border: 1px solid var(--celeste);
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.boton-principal:hover {
+    color: var(--azul);
+    background-color: var(--blanco);
+    border-color: var(--blanco);
+}
+
+.hero-foto-marco {
+    position: relative;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+}
+
+.hero-foto {
+    display: block;
+    width: 100%;
+    height: 365px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.foto-etiqueta {
+    padding: 12px 5px 2px;
+    color: var(--celeste);
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    text-align: center;
+}
+
+.hero-detalle {
+    position: absolute;
+    right: -75px;
+    bottom: -130px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(185, 215, 229, 0.2);
+    border-radius: 50%;
+}
+
+/* FRASE DE INTRODUCCIÓN */
+.introduccion {
+    padding: 30px 0;
+    background-color: var(--celeste-claro);
+    border-bottom: 1px solid #D8E6EC;
+}
+
+.introduccion-frase {
+    max-width: 850px;
+    margin: 0 auto;
+    color: var(--azul);
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* SECCIONES GENERALES */
+.seccion {
+    padding: 88px 0;
+}
+
+.seccion-clara {
+    background-color: var(--blanco);
+}
+
+.encabezado-seccion {
+    max-width: 760px;
+}
+
+.encabezado-seccion h2,
+.identidad h2,
+.precio-panel h2,
+.contacto h2 {
+    margin-bottom: 18px;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.encabezado-seccion > p:last-child,
+.identidad p,
+.precio-panel p {
+    color: var(--texto);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* TARJETAS DE LA PROBLEMÁTICA */
+.tarjeta-info {
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--blanco);
+    border: 1px solid #E1E9ED;
+    border-radius: 5px;
+    box-shadow: 0 12px 30px rgba(16, 43, 67, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tarjeta-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(16, 43, 67, 0.12);
+}
+
+.tarjeta-info img {
+    display: block;
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 25px;
+}
+
+.numero {
+    color: var(--marron);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.tarjeta-contenido h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.tarjeta-contenido p {
+    margin-bottom: 0;
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+/* PROPUESTA Y SENSORES */
+.seccion-azul {
+    color: var(--blanco);
+    background-color: var(--azul);
+}
+
+.encabezado-blanco > p:last-child {
+    color: #D6E3EA;
+}
+
+.encabezado-blanco h2 {
+    color: var(--blanco);
+}
+
+.tarjeta-sensor {
+    height: 100%;
+    padding: 29px 25px;
+    color: var(--azul);
+    background-color: var(--celeste-claro);
+    border-top: 3px solid var(--marron);
+    border-radius: 4px;
+}
+
+.sensor-numero {
+    color: #8B7967;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.tarjeta-sensor h3 {
+    margin: 17px 0 12px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.tarjeta-sensor p {
+    margin-bottom: 0;
+    color: var(--texto);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.funcionamiento {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 30px;
+    align-items: center;
+    margin-top: 35px;
+    padding: 30px;
+    background-color: #1B3B53;
+    border: 1px solid rgba(185, 215, 229, 0.2);
+    border-radius: 4px;
+}
+
+.funcionamiento h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.funcionamiento p:last-child {
+    margin: 0;
+    color: #D6E3EA;
+    line-height: 1.8;
+}
+
+.foto-seguridad {
+    margin-top: 45px;
+}
+
+.foto-seguridad img {
+    display: block;
+    width: 100%;
+    max-height: 390px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.foto-seguridad p {
+    margin: 13px 0 0;
+    color: var(--celeste);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* IDENTIDAD VISUAL */
+.identidad {
+    background-color: var(--celeste-claro);
+}
+
+.logo-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    padding: 25px;
+    background-color: var(--blanco);
+    border: 1px solid #DCE8ED;
+    border-radius: 5px;
+}
+
+.logo-panel img {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    object-fit: contain;
+}
+
+.frase-identidad {
+    margin-top: 22px;
+    color: var(--azul) !important;
+    font-weight: 700;
+}
+
+/* PRECIO */
+.precio-seccion {
+    padding-top: 0;
+    background-color: var(--celeste-claro);
+}
+
+.precio-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    padding: 42px;
+    background-color: var(--blanco);
+    border-left: 5px solid var(--marron);
+    box-shadow: 0 12px 30px rgba(16, 43, 67, 0.06);
+}
+
+.precio-panel > div:first-child {
+    max-width: 580px;
+}
+
+.precio-valor {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.precio-valor span {
+    display: block;
+    color: var(--azul);
+    font-size: clamp(35px, 5vw, 52px);
+    font-weight: 700;
+}
+
+.precio-valor small {
+    color: #8B7967;
+    font-size: 12px;
+}
+
+/* CONTACTO */
+.contacto {
+    padding: 75px 0;
+    color: var(--blanco);
+    background: linear-gradient(120deg, var(--azul), var(--azul-medio));
+}
+
+.contacto h2 {
+    margin-bottom: 15px;
+}
+
+.contacto p:not(.sobretitulo) {
+    color: #D6E3EA;
+}
+
+.boton-contacto {
+    margin-top: 12px;
+    padding: 12px 25px;
+    color: var(--azul);
+    background-color: var(--celeste);
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.boton-contacto:hover {
+    color: var(--azul);
+    background-color: var(--blanco);
+}
+
+/* PIE DE PÁGINA */
+.pie {
+    padding: 38px 0 22px;
+    color: var(--blanco);
+    background-color: #0A2033;
+}
+
+.pie-superior,
+.pie-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.pie-superior h2 {
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.pie-superior p,
+.pie-inferior p {
+    margin-bottom: 0;
+    color: #C6D6DF;
+    font-size: 13px;
+}
+
+.volver-arriba {
+    color: var(--celeste);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.volver-arriba:hover {
+    color: var(--blanco);
+}
+
+.pie-inferior {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 767px) {
+    .hero {
+        padding: 62px 0 70px;
+    }
+
+    .hero-foto {
+        height: 260px;
+    }
+
+    .seccion {
+        padding: 65px 0;
+    }
+
+    .funcionamiento,
+    .precio-panel {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+    .precio-valor {
+        text-align: left;
+    }
+
+    .pie-superior,
+    .pie-inferior {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
